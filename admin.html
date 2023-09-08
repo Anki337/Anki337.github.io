@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Bryt å bänd AB &copy;</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   </head>
 
   <!-- start av body -->
@@ -34,14 +35,17 @@
 
     <!-- start av admin window -->
     <main class="main-box">
-        <div id="adminbox" class="box">
-            <div class="text-container">
-                <span><input id="admin-text" type="text" class="text-input"></span>
-            </div>
-            <button id="add-btn" class="button">Add</button>
-            <button id="delete-btn" class="button">delete</button>
+      <div id="adminbox" class="box">
+        <div class="text-container">
+          <textarea id="admin-text" type="text" class="text-input"></textarea>
         </div>
       </div>
+      <div id="admin-buttons" class="box">
+        <button id="add-btn" class="button">Add</button>
+        <button id="delete-btn" class="button">Delete</button>
+        <button id="clear-btn" class="button">Clear all tasks</button>
+      </div>
+      <div id="to-do-list" class="box"></div>
     </main>
 
     <!-- slut av admin window -->
