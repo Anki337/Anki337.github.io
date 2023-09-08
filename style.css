@@ -74,6 +74,7 @@ nav > h1 {
 .main-box > .box {
   height: 800px;
   border: 2px outset rgb(252, 86, 25);
+  border-radius: 8px;
   box-shadow: -5px 5px 30px 1px rgba(252, 85, 25, 0.658), -1em 0 1em;
   overflow: hidden;
   flex-direction: column;
@@ -124,4 +125,21 @@ footer > h3 {
 }
 /* footer > h3:hover {
   color: rgb(252, 86, 25);
+} */
+.button {
+  height: 50px;
+  width: 250px;
+  display: inline-block;
+  border: 2px outset rgb(252, 86, 25);
+  border-radius: 8px;
+  margin: 25px;
+}
+.text-container {
+  border: 1px outset rgb(252, 86, 25);
+  min-height: 300px;
+  width: 555px;
+  margin: 25px;
+}
+/* .text-input {
+  size: ;
 } */
