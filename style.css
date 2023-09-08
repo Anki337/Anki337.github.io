@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.box {
+  background-color: #d3d0cb;
+  box-shadow: 0px 0px 5px #d3d0cb;
+  border: 1px outset rgb(252, 86, 25);
+}
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #353238;
+}
+.navbar-container {
+  display: flex;
+  width: 100%;
+  border: 2px outset rgb(252, 86, 25);
+  flex-wrap: wrap;
+}
+nav {
+  background-color: #d3d0cb;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+nav ul {
+  list-style: none;
+  font-size: small;
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+}
+nav > ul > li {
+  margin: 5px;
+}
+nav > h1 {
+  color: #344966;
+  font-size: small;
+}
+.navbarbigbuttons {
+  width: 100vw;
+  font-size: small;
+  color: blanchedalmond;
+  display: inline-flex;
+  justify-content: space-around;
+}
+.navbarbigbuttons h3 {
+  font-style: italic;
+  margin-right: 10px;
+}
+.navbarbigbuttons > h3:hover {
+  color: rgb(252, 86, 25);
+}
+.main-box {
+  height: 91vh;
+  min-height: 100%;
+  background-color: #353238;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  flex-grow: 1;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  min-width: 100%;
+  justify-content: space-around;
+}
+.main-box > .box {
+  height: 800px;
+  border: 2px outset rgb(252, 86, 25);
+  box-shadow: -5px 5px 30px 1px rgba(252, 85, 25, 0.658), -1em 0 1em;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+}
+#box1.box {
+  display: flex;
+  flex-basis: 20%;
+  justify-content: space-evenly;
+  padding: 30px;
+}
+#box2.box {
+  display: flex;
+  flex-basis: 40%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#box3.box {
+  display: flex;
+  flex-basis: 20%;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+a {
+  color: #344966;
+}
+a:hover {
+  color: rgb(252, 86, 25);
+}
+.footer-container {
+  position: relative;
+  height: 75px;
+  width: 100%;
+  margin-top: -75px;
+  clear: both;
+  display: flex;
+}
+#footer {
+  background-color: #d3d0cb;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer > h3 {
+  font-size: small;
+  color: #344966;
+}
+/* footer > h3:hover {
+  color: rgb(252, 86, 25);
+} */
