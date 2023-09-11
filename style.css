@@ -18,7 +18,7 @@ body {
 .navbar-container {
   display: flex;
   width: 100%;
-  border: 2px outset rgb(252, 86, 25);
+  border-bottom: 2px outset rgb(252, 86, 25);
   flex-wrap: wrap;
 }
 nav {
@@ -47,7 +47,6 @@ nav > h1 {
 .navbarbigbuttons {
   width: 100vw;
   font-size: small;
-  color: blanchedalmond;
   display: inline-flex;
   justify-content: space-around;
 }
@@ -106,6 +105,7 @@ a:hover {
   color: rgb(252, 86, 25);
 }
 .footer-container {
+  border-top: 2px outset rgb(252, 86, 25);
   position: relative;
   height: 75px;
   width: 100%;
@@ -140,23 +140,23 @@ footer > h3 {
 .text-container {
   border: 1px outset rgb(252, 86, 25);
   border-radius: 8px;
-  min-height: 300px;
+  min-height: 350px;
   width: 555px;
-  margin: 25px;
+  margin: 20px;
   display: block;
   overflow: auto;
-  padding: 5px;
 }
 .text-input {
+  border: 1px outset rgb(252, 86, 25);
+  display: block;
+  overflow: auto;
   width: 100%;
-  height: 300px;
+  min-height: 400px;
   resize: none;
   font-size: larger;
-  text-shadow: #344966;
   text-decoration: none;
-  border: 0.2px solid rgb(252, 86, 25);
   border-radius: 8px;
-  padding: 5px;
+  margin: 0px;
 }
 #to-do-list {
   display: flex;
@@ -168,8 +168,23 @@ footer > h3 {
   align-items: center;
   padding: 20px;
 }
+#to-do-list > p {
+  font-style: italic;
+  color: #344966;
+  font-size: x-large;
+}
 #admin-buttons {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+#adminbox {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 20px;
+}
+#adminbox > p {
+  font-style: italic;
+  color: #344966;
+  font-size: x-large;
 }
