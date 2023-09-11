@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const adminText = document.querySelector("#admin-text");
   const deleteButton = document.querySelector("#delete-btn");
   const toDoListContainer = document.querySelector("#to-do-list");
+  const clearallbutton = document.querySelector("#clear-btn");
 
   // Add a to-do item
   addButton.addEventListener("click", function () {
@@ -37,17 +38,35 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  // Initialize a variable to store the list div
+  let listDiv = null;
+
   // Update the displayed list
   function updateToDoList() {
-    toDoListContainer.innerHTML = ""; // Clear the current list
+    // Create the div if it doesn't exist
+    if (!listDiv) {
+      listDiv = document.createElement("div");
+      toDoListContainer.appendChild(listDiv);
+    }
+
+    // Clear the current list items inside the div
+    listDiv.innerHTML = "";
 
     // Loop through the to-do items and display them with their unique IDs
     for (let i = 0; i < toDoList.length; i++) {
       const listItem = document.createElement("li");
       listItem.textContent = `[${toDoList[i].id}] ${toDoList[i].text}`;
-      toDoListContainer.appendChild(listItem);
+      listDiv.appendChild(listItem);
     }
   }
+  // Clear all information in tasks
+  clearallbutton.addEventListener("click", function () {
+    const confirmed = confirm("Are you sure you want to remove all task's?");
+    if (confirmed) {
+      toDoList = [];
+      updateToDoList();
+    }
+  });
 });
 
 // ** Jquery ** //

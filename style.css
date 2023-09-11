@@ -157,6 +157,7 @@ footer > h3 {
   text-decoration: none;
   border-radius: 8px;
   margin: 0px;
+  padding: 20px;
 }
 #to-do-list {
   display: flex;
@@ -187,4 +188,23 @@ footer > h3 {
   font-style: italic;
   color: #344966;
   font-size: x-large;
+}
+#to-do-list > div p {
+  font-style: italic;
+  color: #344966;
+  font-size: x-large;
+  margin: 10px;
+}
+#to-do-list {
+  display: flex;
+  flex-direction: column;
+}
+#to-do-list > div:nth-child(2) {
+  max-width: 500px;
+  overflow-x: auto;
+  word-wrap: break-word;
+  padding: 10px;
+}
+#to-do-list > div:nth-child(2) > li {
+  padding: 5px;
 }
