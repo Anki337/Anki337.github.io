@@ -1,11 +1,13 @@
+// *** To-Do List *** //
+
 $(document).ready(function () {
-  // Initialize an empty array to store your to-do items
+  // Initialize an empty array to store to-do items
   let toDoList = [];
 
   // Initialize the last assigned ID to 0
   let lastAssignedID = 0;
 
-  //Function to add a to-do item
+  // Add a to-do item
   $("#add-btn").click(function () {
     const newItem = $("#admin-text").val(); // Get the text from the textarea
     if (newItem.trim() !== "") {
@@ -18,7 +20,7 @@ $(document).ready(function () {
     }
   });
 
-  //Function to delete a to-do item by unique ID
+  // Delete a to-do item by unique ID
   $("#delete-btn").click(function () {
     const uniqueID = parseInt(prompt("Enter the unique ID to delete:"));
     if (!isNaN(uniqueID)) {
@@ -31,7 +33,7 @@ $(document).ready(function () {
     }
   });
 
-  //Function to update the displayed list
+  // Update the displayed list
   function updateToDoList() {
     const listContainer = $("#to-do-list");
     listContainer.empty(); // Clear the current list
@@ -45,3 +47,4 @@ $(document).ready(function () {
     }
   }
 });
+// ** End of To-Do List ** //
